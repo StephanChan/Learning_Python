@@ -1,0 +1,22 @@
+import numpy as np
+import multiprocessing as mp
+import time
+
+def print_():
+    while(True):
+        print 'function 1 working fine'
+        time.sleep(0.5)
+
+def print_1():
+    while(True):
+        print 'function 2 working fine'
+        time.sleep(0.5)
+
+if __name__=='__main__':
+    pool = mp.Pool(2)
+    p1 = mp.Process(target=print_, args=())
+    p2 = mp.Process(target=print_1, args=())
+    p1.start()
+    time.sleep(1.5)
+    p2.start()
+
