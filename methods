@@ -1,0 +1,19 @@
+ubuntu install ananconda and sip:
+   riverbank download .tar.gz file
+   extract
+   go into the file directory
+   python configure.py
+   sudo make
+   sudo make install
+  
+ubuntu compile .so from c/c++ file:
+   gcc -fPIC -c shared.cpp -o shared.o
+   gcc -shared  -Wl,-soname,libshared.so -o libshared.so shared.o
+   (not sure if it works with class defined)
+   
+windows compile .dll from c/c++ file:
+   visual studio 2015 new project-> c++-> console->add source file-> select DLL
+   at the top of the file, add #define DLLEXPORT extern "C" __declspec(dllexport)
+   put DLLEXPORT on every function want to export
+   choose x86/x64
+   generating solution
