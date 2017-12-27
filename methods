@@ -17,3 +17,5 @@ windows compile .dll from c/c++ file:
    put DLLEXPORT on every function want to export
    choose x86/x64
    generating solution
+   
+pip install some-package.whl
