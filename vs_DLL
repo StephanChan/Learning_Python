@@ -4,7 +4,8 @@ Win32 Console Application
 Application type as DLL
 no precompiled header
 no security development lifecycle
-put #define DLLEXPORT extern "C" __declspec(dllexport) in the very beginning
+put #define DLLEXPORT extern "C" __declspec(dllexport) in the very beginning (if you use ifdef..., check in Project->project properties->
+configuration properties->C/C++->preprocessor that the DLL_EXPORTS is exited)
 
 put DLLEXPORT before every function defined,like: DLLEXPORT void grid2D(int *, int *, int *, int, int, int);
 x64 Release
