@@ -19,4 +19,4 @@ how does multiprocessing deals with variables?
      1.processes cannot share variables; when the main process consists of initiating hardwares, the hardware will be multi initiated when processes starts
      2.when a new process starts within an old process, the new process have the variable changed by the old process, in a way that they seem to share that variable, which is the case in lines_alternately_share_variable_in_multiprocessing
      
-ctypes: need to be learned
+ctypes: ctypes_test.py
