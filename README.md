@@ -1,5 +1,5 @@
 # Learning
-here's some files on what I'm learning, like multiprocessing
+here's some scripts of python programming what I was learning, including 3D animation, multiprocessing, ctypes
 
 Comments:
 
